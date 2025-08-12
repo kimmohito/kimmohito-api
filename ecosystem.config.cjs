@@ -8,7 +8,7 @@ module.exports = {
             script: "bash",
             args: [
                 "-c",
-                "php artisan serve --port=8001"
+                "export NVM_DIR=\"$HOME/.nvm\" && [ -s \"$NVM_DIR/nvm.sh\" ] && . \"$NVM_DIR/nvm.sh\" && php artisan serve --port=8001"
             ],
         },
     ],
